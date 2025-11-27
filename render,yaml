@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: max2tg
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python max2tg.py
+    autoDeploy: true
