@@ -1,0 +1,10 @@
+services:
+  - type: cron
+    name: max2tg
+    env: python
+    region: oregon
+    plan: free
+    schedule: "* * * * *"   # каждую минуту пингует, чтобы не засыпал
+    buildCommand: pip install -r requirements.txt
+    startCommand: python max2tg.py
+    autoDeploy: true
