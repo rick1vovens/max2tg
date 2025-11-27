@@ -1,0 +1,2 @@
+telethon==1.36.0
+maxapi-python==0.2.9
